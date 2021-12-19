@@ -34,7 +34,7 @@ public class server{
                 out.flush();
                 out.close();
             }catch(IOException a){
-                System.out.println(a);
+                // System.out.println(a);
             };
         }
     }
