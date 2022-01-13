@@ -6,7 +6,8 @@ import java.net.Socket;
 public class client {
     public static void main(String[] args){
         int portNumber = 3000;
-        while(true){
+        String message = "";
+        do{
             try{
                                             //System.out.println("ho cerato il socket d'invio");
                 //creazione socket per inviare messaggi 
@@ -19,7 +20,6 @@ public class client {
                 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
                 //leggere da tastiera
-                String message = "";
                 System.out.println("\ntu: ");
                 message = in.readLine();
 
@@ -39,6 +39,6 @@ public class client {
             }catch(IOException a){
                 // System.out.println(a);
             };
-        }
+        }while(message.equals("quit") != true);
     }
 }

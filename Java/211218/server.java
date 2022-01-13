@@ -22,7 +22,7 @@ public class server{
                 String message;
                 System.out.println("\nterminale: ");
                 message = reader.readLine();
-                if(message != "quit"){
+                if(message.equals("quit") != true){
                     System.out.println(message);
 
                     //leggere da tastiera
