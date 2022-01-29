@@ -1,0 +1,6 @@
+ciao
+gino
+albero
+macaco
+zanzara
+dugongo
